@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Формы и инпуты</title>
+</head>
+<body>
+<form action="" method="get">
+	<p>Здесь будут отображаться элементы формы</p>
+	<id>
+		<p>Enter username
+		<input type="text" name="username" size="15" maxlength="30"/></p><br>
+		<p>Enter password
+		<input type="password" name="password" size="15" maxlength="30"/></p>
+		что вы думаете о выступлении<br>
+		<textarea name="comments" cols="20" rows="4">Введите комментарий это не плейсхолдер</textarea><br>
+		<input type="radio" name="genre" value="rock" checked="checked"> Рок музыка<br>
+		<input type="radio" name="genre" value="pop"> Популярная музыка<br>
+		<input type="radio" name="genre" value="electro"> Электронная музыка<br>
+		<br>
+		Ваши любимые группы<br>
+		<input type="checkbox" name="group" value="Gorillaz" checked="checked">Gorillaz<br>
+		<input type="checkbox" name="group" value="Rammstein" checked="checked">Rammstein<br>
+		<input type="checkbox" name="group" value="IAMX" checked="checked">IAMX<br>
+		<input type="checkbox" name="group" value="Pink Flyod" checked="checked">Pink Flyod<br>
+		<br>
+	    С какого утсройства слушаете чаще всего?<br>
+		<select name="ustroistva">
+			<option value="ipod">iPod</option>
+			<option value="radio">Радио</option>
+			<option value="computer">Компьютер</option>
+		</select><br>
+		<br>
+		Выгрузите свою любимую песню в форомате MP3<br>
+		method="post"<br>
+		<input type="file" name="song" /><br>
+		<input type="submit" value="Загрузить" /><br>
+		<br>
+		Подпишитесь на рассылку наших новостей<br>
+		<input type="text" name="email">
+		<input type="submit" name="podpisatsya" value="Подписаться"> 
+		<!--<input type="image" src="image/subscribe.jpg" width="100" height="20" />-->
+        <br>
+        <br>
+		<button><img src="" alt="добавить" width="10" height="10">+Добавить</button><br>
+		<input type="hidden" name="zakladka" value="tekst_pesni">
+		<br>
+		<label>Возраст: <input type="text" name="vozrast" required="required"></label><!--required eto neobhodimost' vvoda-->
+		<br>
+		Пол:
+		<input id="female" type="radio" name="pol" value="f">
+		<label for="female">Женский</label>	
+		<input id="male" type="radio" name="pol" value="m">
+		<label for="male">Мужской</label>
+		<br>
+		<fieldset>
+			<legend>Contact detail</legend>
+			<label>Email:<br><input type="text" name="email"></label><br>
+			<label>Mobile:<br><input type="text" name="mobile"></label><br>
+			<label>Telephone:<br><input type="text" name="telephone"></label><br>
+		</fieldset>
+        <label for="depart">Дата вылета</label>
+        <input type="date" name="depart">
+        <input type="submit" value="Отправить"><!--<input type="email>" chtoby user vvel imenno email-->
+		
+
+
+</form>
+</body>
+</html>
